@@ -14,11 +14,11 @@ jobs:
           run: echo ${{github.actor}}
         - name: Verificando se README.md existe 
           run: |
-            if [ -f "README.md"]; then
-                echo "O arquivo README.md existe."
+            if [ -f "README.md" ]; then
+              echo "O arquivo README.md existe."
             else
-                echo "Erro: O arquivo README.md não foi encontrado!"
-                exit 1
+              echo "Erro: O arquivo README.md não foi encontrado!"
+              exit 1
             fi
         - name: Conclusão da Validação
           run: echo "Validação concluida para o README.md"
