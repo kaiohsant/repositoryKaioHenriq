@@ -9,9 +9,9 @@ jobs:
         - name: Checkout
           uses: actions/checkout@v5
         - name: Exibindo Repositório
-          run: ${{github.repository}}
+          run: echo ${{github.repository}}
         - name: Exibindo Usuário
-          run: ${{github.actor}}
+          run: echo ${{github.actor}}
         - name: Verificando se README.md existe 
           run: |
             if [ -f "README.md"]; then
